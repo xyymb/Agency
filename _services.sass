@@ -1,0 +1,65 @@
+#services
+    background-color: #ffff
+    padding: 80px 0
+    .col-md-4
+        display: flex
+        justify-content: center
+    .textbox
+        
+        h1,h2
+            padding-top: 20px
+            font-size: 40px
+            font-weight: 700
+            text-align: center
+        h2
+            font-size: 30px
+            text-align: center
+        
+        h4,h3
+            line-height: 1.5
+            padding: 20px 0 0 0 
+            text-align: center
+            font-family: Georgia, serif
+            color: #6c757d
+            font-weight: 500
+            font-size: 16px
+        h3
+           font-style: italic 
+           padding-bottom: 60px
+        h4
+            width: 380px
+    .box
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        width: 33%
+        
+        .borderr
+            width: 100%
+            height: 130px
+            background-color: #ffc800
+            border-radius: 50%
+            .icon
+                display: flex
+                align-items: center
+                justify-content: center
+                width: 100%
+                height: 100%
+                scale: 3.8
+                color: #ffff
+    @media (max-width: 1000px)
+        .col-md-4
+            width: 100%
+        .box .borderr
+            width: 45%
+            height: 100px
+            .icon
+                scale: 2
+        .textbox
+            h1
+                font-size: 28px
+            h2
+                font-size: 24px
+            h4
+                padding-bottom: 20px

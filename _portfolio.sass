@@ -1,0 +1,90 @@
+#portfolio
+    background-color: #F8F9FA
+    padding: 80px
+    .textbox
+        h1,h2
+            padding-top: 20px
+            font-size: 40px
+            font-weight: 700
+            text-align: center
+        h2
+            font-size: 30px
+            text-align: center
+
+        h4,h3
+            line-height: 1.5
+            padding: 20px 0 60px 0
+            text-align: center
+            font-family: Georgia, serif
+            color: #6c757d
+            font-weight: 500
+            font-size: 16px
+        h3
+            font-style: italic
+
+    .box
+        position: relative
+        margin: 0 0 20px 0
+        width: 420px
+        height: 420px
+        background-color: #ffff
+        .textbox2
+            position: relative
+            z-index: 2
+            display: flex
+            justify-content: flex-end
+            align-items: center
+            flex-direction: column
+            h2
+                font-weight: 600
+                padding: 20px 0 10px
+                font-size: 30px
+                text-align: center
+            h4
+                line-height: 1.5
+                text-align: center
+                font-style: italic
+                color: #6c757d
+                font-size: 16px
+        .imgbox
+            position: relative
+            img
+                width: 100%
+        .yellow-object 
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background-color: #ffc800
+            opacity: 0
+            z-index: 1
+            transition: opacity 0.3s ease
+        
+        .imgbox:hover .yellow-object 
+            opacity: 0.8
+        .icon 
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            z-index: 3
+            font-size: 56px
+            color: white
+            opacity: 0
+            transition: opacity 0.3s ease
+        .imgbox:hover .icon 
+            opacity: 1
+        .yellow-object:hover 
+            cursor: pointer
+        i:hover 
+            cursor: pointer
+    @media (max-width: 1000px)
+        .textbox
+            h1
+                font-size: 30px
+        .col-md-4 
+            width: 100%
+            display: flex
+            flex-direction: column
+            align-items: center
